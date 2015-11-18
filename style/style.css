@@ -1,0 +1,44 @@
+body {
+    font-family: Raleway, Helvetica, Arial, sans-serif;
+    padding : 20px;
+}
+
+h1 {
+    font-size:5em;
+}
+
+.terminal {
+    position: relative;
+    max-width: 700px;
+    height: 400px;
+    margin : auto;
+    padding: 10px;
+    background-color: #000000;
+    font-family: Consolas, Monaco, monospace;
+    color: #31B404;
+}
+
+.terminal label {
+    position: absolute;
+}
+
+.terminal pre{
+    font-family:inherit;
+}
+
+.terminalDisplay {
+    word-wrap: break-word;
+}
+
+.terminalCommand {
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    padding: 0;
+    padding-left:13px;
+    box-sizing: border-box;
+}
+
+.terminalCommand:focus {
+    outline:0;
+}
