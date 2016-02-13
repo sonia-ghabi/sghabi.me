@@ -8,12 +8,65 @@
 		<link rel="stylesheet" href="style/style.css" type="text/css" />
 	</head>
 	<body>
-		<h1>Sonia Ghabi</h1>
-		<div class="terminal" id="terminal">
-			<pre class="terminalDisplay" id="terminalDisplay"></pre>
-			<label for='terminalCommand'>&gt; </label>
-			<input class="terminalCommand" id="terminalCommand"/>
+		<div class="hidden" id="terminalWindow">
+			<div class="window">
+				<img src="./img/contour.png"/>
+			</div>
+			<div class="terminal" id="terminal">
+				<pre class="terminalDisplay" id="terminalDisplay"></pre>
+				<label for='terminalCommand'>&gt; </label>
+				<input class="terminalCommand" id="terminalCommand"/>
+			</div>
 		</div>
+		<div class="folder">
+			<img class="icon" id="icon" draggable="true" src="./img/folderIcon.png"/>
+			<br/>
+			<span> Work </span>
+		</div>
+		<div class="hidden" id="workFolderWindow">
+			<img src="./img/workFolder.png"/>
+		</div>
+
+		<div class="hidden" id="workFolder" draggable="true">
+			<div class="header">
+				<div class="windowButtons">
+					<img class="closeButton" data-close="workFolder" src="./img/closeIcon.png"/>
+					<img src="./img/minimizeIcon.png"/>
+					<img src="./img/maximizeIcon.png"/>
+				</div>
+				<div class="windowTitle">
+					<img class="icon" id="icon" draggable="true" src="./img/folderIcon.png"/>
+					<span>Work</span>
+				</div>
+				<div class="buttons">
+					<img class="icons" src="./img/icons.png"/>
+					<img class="icon" src="./img/icon1.png"/>
+					<img class="icon" src="./img/icon2.png"/>
+					<img class="icon" src="./img/icon3.png"/>
+					<img class="icon" src="./img/icon4.png"/>
+				</div>
+			</div>
+			<div class="sidebar">
+			</div>
+			<div class="windowArea">
+				<div class="windowAreaIcon">
+					<img id="resumeIcon" src="./img/pdfIcon.png"/>
+					<span>Resume.pdf</span>
+				</div>
+			</div>
+			<div class="path">
+			</div>
+		</div>
+
+		<div draggable="true" id="resumeWindow" class="hidden">
+			<div class="frameHeader">
+				<img class="closeButton" data-close="resumeWindow" src="./img/closeIconFrame.png"/>
+				<p>Resume.pdf</p>
+			</div>
+			<iframe src="./srcFiles/Resume_GhabiSonia.pdf">
+			</iframe>
+		</div>
+		
 		<script type="text/javascript" src="scripts/script.js"></script>
 	</body>
 </html>
